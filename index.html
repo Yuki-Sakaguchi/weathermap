@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>weather</title>
+        <style>
+            .weather-box {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="weather-zip" class="weather-box">
+            <h2>郵便番号から取得（333-0864を指定）</h2>
+        </div>
+        <div id="weather-latlon" class="weather-box">
+            <h2>緯度経度から取得（緯度経度はこちらで指定 lat = 35.67, lon = 139.71）</h2>
+        </div>
+        <div id="weather-omake" class="weather-box">
+            <h2>緯度経度から取得（デバイスの位置から緯度経度を自動取得）</h2>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
